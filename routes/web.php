@@ -42,3 +42,43 @@ Route::get('variables', function(){
         var_dump($estudiante);
         echo "<pre>";
     });
+
+    Route:: get("paises",function(){
+
+        $paises= [ "Colombia" => [
+                                   "capital"=> "Bogota",
+                                   "moneda" => "Peso",
+                                   "poblacion" => 51
+                                 ],
+                    "Peru" => [
+                                   "capital"=> "Lima",
+                                   "moneda" => "sol",
+                                   "poblacion" => 32.8
+
+                                 ],
+                    "Paraguay" =>[
+                                    "capital"=> "asuncion",
+                                    "moneda" => "Guara",
+                                    "poblacion" => 7.3
+                        ]
+                    ];
+
+        $suma = 0;
+        foreach ($paises as $nombre => $pais){
+            $suma += $pais ["poblacion"];
+        }
+        echo "La suma de los paises es $suma";
+    });
+
+
+        foreach ($paises as $nombre => $pais){
+            echo "<pre>";
+            echo "<h1>$nombre</h1>";
+            print_r($pais["capital"]. "<br/>");
+            print_r($pais["poblacion"]. "<br/>");
+            print_r($pais["moneda"]. "<br/>");
+            echo "</pre>";
+            echo "<hr/>";
+
+        }
+});
