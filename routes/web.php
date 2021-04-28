@@ -68,17 +68,7 @@ Route::get('variables', function(){
             $suma += $pais ["poblacion"];
         }
         echo "La suma de los paises es $suma";
-    });
+    }
 
 
-        foreach ($paises as $nombre => $pais){
-            echo "<pre>";
-            echo "<h1>$nombre</h1>";
-            print_r($pais["capital"]. "<br/>");
-            print_r($pais["poblacion"]. "<br/>");
-            print_r($pais["moneda"]. "<br/>");
-            echo "</pre>";
-            echo "<hr/>";
-
-        }
-});
+);
