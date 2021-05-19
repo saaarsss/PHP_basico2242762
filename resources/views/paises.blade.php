@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body style="background: #A9CCE3 ">
+<body style="background: #FEF9E7  ">
     <center><h1 style="color:#922B21 "><i>Listas de paises</i></h1></center>
     <table  class="table table-hover">
         <tr>
